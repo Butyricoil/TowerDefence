@@ -1,7 +1,5 @@
 using UnityEngine;
 using Zenject;
-using Kingdom.Core.Domain.Interfaces;
-using Kingdom.Core.Data.ScriptableObjects;
 
 // Важно: этот компонент должен быть только на префабе, не размещайте Player на сцене вручную!
 public class PlayerController : MonoBehaviour, IPlayer

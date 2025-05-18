@@ -1,6 +1,5 @@
 using UnityEngine;
 using Zenject;
-using Kingdom.Core.Domain.Interfaces;
 
 public class CameraController : MonoBehaviour
 {

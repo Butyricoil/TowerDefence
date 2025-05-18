@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
-using Kingdom.Core.Domain.Interfaces;
 
 public class PlayerInputHandler : MonoBehaviour
 {
