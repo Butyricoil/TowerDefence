@@ -4,11 +4,14 @@ public interface IPlayer
 {
     Vector2 Position { get; }
     float Speed { get; }
-    bool IsMounted { get; }
     int Coins { get; }
-    
-    void Move(float direction);
-    void Mount();
-    void Dismount();
+    bool IsMounted { get; set; }
+
+    void Move(Vector2 direction);
     void CollectCoin(int amount);
+    void DropCoin();
+    void Jump();
+    void Sprint(bool isSprinting);
+    void Dismount();
+    void Mount();
 } 
