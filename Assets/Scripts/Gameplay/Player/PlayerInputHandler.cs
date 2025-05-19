@@ -37,14 +37,4 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
     
-    public void OnMount(InputValue value)
-    {
-        if (value.isPressed)
-        {
-            if (_player.IsMounted)
-                _player.Dismount();
-            else
-                _player.Mount();
-        }
-    }
-} 
+}

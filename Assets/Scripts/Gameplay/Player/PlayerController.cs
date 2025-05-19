@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour, IPlayer
     {
         _rb = GetComponent<Rigidbody2D>();
         _currentSpeed = _config.walkSpeed;
-        _coins = _config.startingCoins;
     }
     
     public void Move(Vector2 direction)
