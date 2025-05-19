@@ -2,7 +2,7 @@ using UnityEngine;
 using Zenject;
 
 
-// Важно: Player должен быть только в виде префаба, не размещайте его на сцене вручную!
+// Важно: LEGACY должен быть только в виде префаба, не размещайте его на сцене вручную!
 public class GameInstaller : MonoInstaller
 {
     [SerializeField] private PlayerConfig _playerConfig;
@@ -13,7 +13,7 @@ public class GameInstaller : MonoInstaller
         // Configs
         Container.Bind<PlayerConfig>().FromInstance(_playerConfig).AsSingle();
         
-        // Player
+        // LEGACY
         Container.Bind<IPlayer>().To<PlayerController>().FromComponentInNewPrefab(_playerPrefab).AsSingle();
         
         // Camera

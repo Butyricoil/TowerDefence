@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-// Важно: этот компонент должен быть только на префабе, не размещайте Player на сцене вручную!
+// Важно: этот компонент должен быть только на префабе, не размещайте LEGACY на сцене вручную!
 public class PlayerController : MonoBehaviour, IPlayer
 {
     [Inject] private PlayerConfig _config;
