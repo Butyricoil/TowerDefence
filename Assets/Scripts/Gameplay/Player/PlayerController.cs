@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour, IPlayer
     private bool _isGrounded;
     
     public Vector2 Position => transform.position;
+    public IWallet Wallet { get; }
     public float Speed => _currentSpeed;
     public int Coins => _coins;
     public bool IsMounted { get; set; }
